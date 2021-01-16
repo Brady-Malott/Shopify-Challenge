@@ -9,6 +9,9 @@ export const Search = () => {
 
   const onChange = (e) => {
     setSearchText(e.target.value);
+    // Wasn't updating very well to make an API call every time
+    // the search text changed
+    // getResults(searchText);
   };
 
   const onSubmit = (e) => {
